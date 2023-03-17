@@ -6,17 +6,19 @@
  */
 int main(void)
 {
-	if(n<0)
+	int n;
+
+	if(n < 0)
 	{
-		printf("%d is negative",n);
+		printf ("%d is negative", n);
 	}
-	else if(n>0)
+	else if(n > 0)
 	{
-		printf("%d is positive",n);
+		printf ("%d is positive", n);
 	}
 	else
 	{
-		printf("is zero");
+		printf ("is zero");
 	}
 	return (0);
 }
