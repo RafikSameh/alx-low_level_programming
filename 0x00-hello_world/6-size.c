@@ -1,5 +1,5 @@
 #include <stdio.h>
-/*
+/**
  * main - is a function that printf the size of different types
  * Return: 0 (Success)
  */
