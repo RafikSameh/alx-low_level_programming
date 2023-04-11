@@ -1,7 +1,7 @@
 #include <stdlib.h>
 /**
  * _strdup - is a function that return pointer
- *
+ * @str: is a pointer to character
  * Return: pointer to the duplicated array
  */
 char *_strdup(char *str)
@@ -14,12 +14,12 @@ char *_strdup(char *str)
 	i = 0;
 	while (str[i] != '\0')
 		i++;
-	dup = malloc(sizeof(char) * (i+1));
+	dup = malloc(sizeof(char) * (i + 1));
 	if (dup == NULL)
 		return (NULL);
-	for (r = 0; r < i+1; r++)
+	for (r = 0; r < i + 1; r++)
 	{
-		dup[r] = str [r];
+		dup[r] = str[r];
 	}
 	return (dup);
 }
