@@ -1,15 +1,15 @@
 #include <stdlib.h>
 /**
  * str_concat - is a function
- * @str1: pointer to char
- * @str2: pointer to char
+ * @s1: pointer to char
+ * @s2: pointer to char
  * Return: pointer to char
  */
 char *str_concat(char *s1, char *s2)
 {
 	char *s3;
 	int i, j;
-	
+
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
