@@ -1,6 +1,6 @@
 #include <stdlib.h>
-/*
- * alloc_grid - is a function
+/**
+ * alloc_grid - is a function of a loop
  * @width: is integer
  * @height: is integer
  * Return: pointer to 2-D array
@@ -9,6 +9,7 @@ int **alloc_grid(int width, int height)
 {
 	int **x;
 	int i, j;
+
 	if (width <= 0)
 		return (NULL);
 	if (height <= 0)
