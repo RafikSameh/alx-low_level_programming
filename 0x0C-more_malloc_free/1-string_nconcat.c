@@ -24,10 +24,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		i++;
 	while (s2[j] != '\0')
 		j++;
-	if (n >= j)
-		s3 = malloc(sizeof(char) * (i + j + 1));
-	else
+	if (n < j)
 		s3 = malloc(sizeof(char) * (i + n + 1));
+	else
+		s3 = malloc(sizeof(char) * (i + j + 1));
 	if (s3 == NULL)
 		return (NULL);
 	k = 0;
@@ -39,9 +39,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	x = 0;
 	while (x < n)
 	{
-		s3[k] = s2[x];
-		x++;
-		k++;
+		s3[k++] = s2[x++];
 	}
+	s3[k] = '\0';
 	return (s3);
 }
