@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include <stdio.h>
+
 /**
  * malloc_checked -  is a function that create memory
  * @b: is an integer
