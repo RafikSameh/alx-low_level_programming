@@ -1,8 +1,8 @@
 #include <stdlib.h>
 
 /**
- * malloc_checked -  is a function that create memory
- * @b: is an integer
+ * *malloc_checked -  is a function that create memory
+ * @b: is number of bytes
  *
  * Return: pointer to the allocated memory
  */
