@@ -2,7 +2,7 @@
 
 /**
  * add_nodeint - is a function
- * @h:  is a pointer to pointer
+ * @head:  is a pointer to pointer
  * @n: is an integer
  *
  * Return: address of the new node or null
