@@ -1,8 +1,11 @@
 #include "hash_table.h"
+
 /**
- * hash_table_create - is a function to create ht
- * @size: integer to the size of ht
- * Return: pointer to ht struct
+ * hash_table_create - Creates a hash table.
+ * @size: The size of the array.
+ *
+ * Return: If an error occurs - NULL.
+ *         Otherwise - a pointer to the new hash table.
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
@@ -15,9 +18,10 @@ hash_table_t *hash_table_create(unsigned long int size)
 
 	ht->size = size;
 	ht->array = malloc(sizeof(hash_node_t *) * size);
-	if (h->array == NULL)
+	if (ht->array == NULL)
 		return (NULL);
 	for (i = 0; i < size; i++)
-		ht->array[i] = NULL
+		ht->array[i] = NULL;
+
 	return (ht);
 }
